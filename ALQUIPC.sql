@@ -16,7 +16,8 @@ CREATE TABLE usuario (
   usuario_nombre VARCHAR(50) not null, 
   usuario_cedula INT(10) not null,
   usuario_telefono VARCHAR(10) not null,
-  usuario_correo VARCHAR(50) not null
+  usuario_correo VARCHAR(50) not null,
+  usuario_contraseña VARCHAR(50) not null
 );
 
 CREATE TABLE equipo (
