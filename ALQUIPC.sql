@@ -12,7 +12,7 @@ CREATE TABLE categoria (
 );
 
 CREATE TABLE usuario (
-  pk_idUsuario INT (11) PRIMARY KEY not null,
+  pk_idUsuario INT (11) PRIMARY KEY not null AUTO_INCREMENT,
   usuario_nombre VARCHAR(50) not null, 
   usuario_cedula INT(10) not null,
   usuario_telefono VARCHAR(10) not null,
@@ -20,7 +20,7 @@ CREATE TABLE usuario (
 );
 
 CREATE TABLE equipo (
-  pk_idEquipo INT (11) PRIMARY KEY not null,
+  pk_idEquipo INT (11) PRIMARY KEY not null AUTO_INCREMENT,
   equipo_nombre VARCHAR(50) not null,
   equipo_descripcion TEXT not null,
   equipo_tarifa DOUBLE not null,
@@ -29,7 +29,7 @@ CREATE TABLE equipo (
 );
 
 CREATE TABLE alquiler (
-  pk_idAlquiler INT (11) PRIMARY KEY not null,
+  pk_idAlquiler INT (11) PRIMARY KEY not null AUTO_INCREMENT,
   alquiler_fechaInicio DATE not null,
   alquiler_fechaFinal DATE not null,
   alquiler_totalDias INT(3) not null,
@@ -51,7 +51,7 @@ CREATE TABLE equipo_alquiler (
   );
 
 CREATE TABLE pago (
-  pk_idPago INT (11) PRIMARY KEY not null,
+  pk_idPago INT (11) PRIMARY KEY not null AUTO_INCREMENT,
   pago_fecha DATE not null,
   pago_monto DOUBLE not null,
   pago_estado VARCHAR(30) not null,
