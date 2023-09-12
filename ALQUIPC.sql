@@ -17,7 +17,8 @@ CREATE TABLE usuario (
   usuario_cedula INT(10) not null,
   usuario_telefono VARCHAR(10) not null,
   usuario_correo VARCHAR(50) not null,
-  usuario_contraseña VARCHAR(50) not null
+  usuario_contraseña VARCHAR(50) not null,
+  usuario_rol VARCHAR (50) not null
 );
 
 CREATE TABLE equipo (
@@ -65,5 +66,5 @@ INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('1', 'Bogota');
 INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('2', 'Medellin');
 INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('3', 'Cali');
 
-INSERT INTO `usuario` (`pk_idUsuario`, `usuario_nombre`, `usuario_cedula`, `usuario_telefono`, `usuario_correo`) VALUES ('1', 'Santiago Murillo', '1141714236', '3228156326', 'murillo@gmail.com');
+INSERT INTO `usuario` (`pk_idUsuario`, `usuario_nombre`, `usuario_cedula`, `usuario_telefono`, `usuario_correo`, `usuario_contraseña`, usuario_rol) VALUES ('1', 'Santiago Murillo', '1141714236', '3228156326', 'murillo@gmail.com', 'murillo123', 'Cliente');
 
