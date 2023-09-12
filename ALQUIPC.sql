@@ -62,5 +62,5 @@ CREATE TABLE pago (
 
 INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('1', 'Bogota');
 INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('2', 'Medellin');
-INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('1', 'Cali');
+INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('3', 'Cali');
 
