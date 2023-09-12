@@ -15,7 +15,7 @@ CREATE TABLE usuario (
   pk_idUsuario INT (11) PRIMARY KEY not null,
   usuario_nombre VARCHAR(50) not null, 
   usuario_cedula INT(10) not null,
-  usuario_telefono INT(10) not null,
+  usuario_telefono VARCHAR(10) not null,
   usuario_correo VARCHAR(50) not null
 );
 
