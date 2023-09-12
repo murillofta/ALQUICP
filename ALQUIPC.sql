@@ -59,3 +59,8 @@ CREATE TABLE pago (
   fk_idAlquiler INT(11) not null,
   FOREIGN KEY (fk_idAlquiler) REFERENCES alquiler(pk_idAlquiler)
 );
+
+INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('1', 'Bogota');
+INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('2', 'Medellin');
+INSERT INTO `ciudad` (`pk_idCiudad`, `ciudad_nombre`) VALUES ('1', 'Cali');
+
